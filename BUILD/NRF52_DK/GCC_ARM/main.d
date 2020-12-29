@@ -113,4 +113,5 @@ BUILD\NRF52_DK\GCC_ARM\main.o: main.cpp \
  mbed-os/platform/FunctionPointer.h mbed-os/platform/ScopedLock.h \
  nlib\nworkbench.h nlib\fifo.h nlib\BSP\bsp.h nlib\Ticker\ticker.h \
  nlib/nworkbench.h nlib\Counter\counter.h \
- nlib\StringFormat\stringformat.h nlib\StringSerial\stringserial.h
+ nlib\StringFormat\stringformat.h nlib\StringSerial\stringserial.h \
+ nlib\Blink\blink.h

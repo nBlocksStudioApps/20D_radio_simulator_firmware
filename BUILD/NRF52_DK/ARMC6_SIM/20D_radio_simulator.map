@@ -1,0 +1,712 @@
+Component: ARM Compiler 6.14 Tool: armlink [5db06800]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000dd
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000087a8, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00008728, Max: 0x00080000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000dc   Data   RO         2442    RESET               BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/TARGET_MCU_NRF52832/device/TOOLCHAIN_ARM_STD/startup_nrf52832.o
+    0x000000dc   0x00000008   Code   RO         3920  * !!!main             C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__main.o)
+    0x000000e4   0x00000034   Code   RO         4445    !!!scatter          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter.o)
+    0x00000118   0x0000001a   Code   RO         4447    !!handler_copy      C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_copy.o)
+    0x00000132   0x00000002   PAD
+    0x00000134   0x0000001c   Code   RO         4449    !!handler_zi        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__scatter_zi.o)
+    0x00000150   0x00000000   Code   RO         3849    .ARM.Collect$$_printf_percent$$00000000  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_percent.o)
+    0x00000150   0x00000006   Code   RO         3838    .ARM.Collect$$_printf_percent$$00000001  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_n.o)
+    0x00000156   0x00000006   Code   RO         3840    .ARM.Collect$$_printf_percent$$00000002  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_p.o)
+    0x0000015c   0x00000006   Code   RO         3845    .ARM.Collect$$_printf_percent$$00000003  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_f.o)
+    0x00000162   0x00000006   Code   RO         3846    .ARM.Collect$$_printf_percent$$00000004  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_e.o)
+    0x00000168   0x00000006   Code   RO         3847    .ARM.Collect$$_printf_percent$$00000005  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_g.o)
+    0x0000016e   0x00000006   Code   RO         3848    .ARM.Collect$$_printf_percent$$00000006  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_a.o)
+    0x00000174   0x0000000a   Code   RO         4022    .ARM.Collect$$_printf_percent$$00000007  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_ll.o)
+    0x0000017e   0x00000006   Code   RO         3842    .ARM.Collect$$_printf_percent$$00000008  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_i.o)
+    0x00000184   0x00000006   Code   RO         3843    .ARM.Collect$$_printf_percent$$00000009  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_d.o)
+    0x0000018a   0x00000006   Code   RO         3844    .ARM.Collect$$_printf_percent$$0000000A  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_u.o)
+    0x00000190   0x00000006   Code   RO         3841    .ARM.Collect$$_printf_percent$$0000000B  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_o.o)
+    0x00000196   0x00000006   Code   RO         3839    .ARM.Collect$$_printf_percent$$0000000C  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_x.o)
+    0x0000019c   0x00000006   Code   RO         4019    .ARM.Collect$$_printf_percent$$0000000D  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_lli.o)
+    0x000001a2   0x00000006   Code   RO         4020    .ARM.Collect$$_printf_percent$$0000000E  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_lld.o)
+    0x000001a8   0x00000006   Code   RO         4021    .ARM.Collect$$_printf_percent$$0000000F  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_llu.o)
+    0x000001ae   0x00000006   Code   RO         4025    .ARM.Collect$$_printf_percent$$00000010  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_llo.o)
+    0x000001b4   0x00000006   Code   RO         4026    .ARM.Collect$$_printf_percent$$00000011  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_llx.o)
+    0x000001ba   0x0000000a   Code   RO         4023    .ARM.Collect$$_printf_percent$$00000012  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_l.o)
+    0x000001c4   0x00000006   Code   RO         3836    .ARM.Collect$$_printf_percent$$00000013  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_c.o)
+    0x000001ca   0x00000006   Code   RO         3837    .ARM.Collect$$_printf_percent$$00000014  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_s.o)
+    0x000001d0   0x00000006   Code   RO         3850    .ARM.Collect$$_printf_percent$$00000015  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_lc.o)
+    0x000001d6   0x00000006   Code   RO         4024    .ARM.Collect$$_printf_percent$$00000016  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_ls.o)
+    0x000001dc   0x00000004   Code   RO         4018    .ARM.Collect$$_printf_percent$$00000017  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_percent_end.o)
+    0x000001e0   0x00000002   Code   RO         3919    .ARM.Collect$$libinit$$00000000  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit.o)
+    0x000001e2   0x00000004   Code   RO         4070    .ARM.Collect$$libinit$$00000001  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001e6   0x00000000   Code   RO         4073    .ARM.Collect$$libinit$$00000004  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001e6   0x00000008   Code   RO         4074    .ARM.Collect$$libinit$$00000005  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001ee   0x00000000   Code   RO         4076    .ARM.Collect$$libinit$$0000000A  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001ee   0x00000000   Code   RO         4078    .ARM.Collect$$libinit$$0000000C  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001ee   0x00000000   Code   RO         4080    .ARM.Collect$$libinit$$0000000E  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001ee   0x00000006   Code   RO         4081    .ARM.Collect$$libinit$$0000000F  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001f4   0x00000000   Code   RO         4083    .ARM.Collect$$libinit$$00000011  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x000001f4   0x0000000c   Code   RO         4084    .ARM.Collect$$libinit$$00000012  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x00000200   0x00000000   Code   RO         4085    .ARM.Collect$$libinit$$00000013  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x00000200   0x00000000   Code   RO         4087    .ARM.Collect$$libinit$$00000015  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x00000200   0x0000000a   Code   RO         4088    .ARM.Collect$$libinit$$00000016  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4089    .ARM.Collect$$libinit$$00000017  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4091    .ARM.Collect$$libinit$$00000019  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4093    .ARM.Collect$$libinit$$0000001B  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4095    .ARM.Collect$$libinit$$0000001D  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4097    .ARM.Collect$$libinit$$0000001F  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4099    .ARM.Collect$$libinit$$00000021  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000000   Code   RO         4101    .ARM.Collect$$libinit$$00000023  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020a   0x00000004   Code   RO         4102    .ARM.Collect$$libinit$$00000024  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020e   0x00000000   Code   RO         4103    .ARM.Collect$$libinit$$00000025  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020e   0x00000000   Code   RO         4107    .ARM.Collect$$libinit$$0000002C  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020e   0x00000000   Code   RO         4109    .ARM.Collect$$libinit$$0000002E  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020e   0x00000000   Code   RO         4111    .ARM.Collect$$libinit$$00000030  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x0000020e   0x00000004   Code   RO         4112    .ARM.Collect$$libinit$$00000031  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x00000212   0x00000000   Code   RO         4113    .ARM.Collect$$libinit$$00000032  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x00000212   0x00000002   Code   RO         4114    .ARM.Collect$$libinit$$00000033  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libinit2.o)
+    0x00000214   0x00000000   Code   RO         4316    .ARM.Collect$$libshutdown$$00000004  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(libshutdown2.o)
+    0x00000214   0x00000000   Code   RO         3967    .ARM.Collect$$rtentry$$00000000  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry.o)
+    0x00000214   0x00000000   Code   RO         4139    .ARM.Collect$$rtentry$$00000002  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry2.o)
+    0x00000214   0x00000004   Code   RO         4153    .ARM.Collect$$rtentry$$00000007  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry7.o)
+    0x00000218   0x00000008   Code   RO         4140    .ARM.Collect$$rtentry$$00000008  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry2.o)
+    0x00000220   0x00000004   Code   RO         4142    .ARM.Collect$$rtentry$$0000000A  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry2.o)
+    0x00000224   0x00000000   Code   RO         4144    .ARM.Collect$$rtentry$$0000000C  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry2.o)
+    0x00000224   0x00000008   Code   RO         4145    .ARM.Collect$$rtentry$$0000000D  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry2.o)
+    0x0000022c   0x00000004   Code   RO         4154    .ARM.Collect$$rtentry$$00002718  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__rtentry7.o)
+    0x00000230   0x000000c8   Code   RO         1857    .text               BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/TARGET_CORTEX_M/TOOLCHAIN_ARM/except.o
+    0x000002f8   0x0000002c   Code   RO         2443    .text               BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/TARGET_MCU_NRF52832/device/TOOLCHAIN_ARM_STD/startup_nrf52832.o
+    0x00000324   0x00000002   Code   RO         3689    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi_2.o)
+    0x00000326   0x00000002   PAD
+    0x00000328   0x00000008   Code   RO         3691    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_errno_addr.o)
+    0x00000330   0x0000005e   Code   RO         3700    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_alloc.o)
+    0x0000038e   0x0000004e   Code   RO         3702    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_free.o)
+    0x000003dc   0x000000f0   Code   RO         3758    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lludivv7m.o)
+    0x000004cc   0x0000000a   Code   RO         3760    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(vfprintf.o)
+    0x000004d6   0x00000002   PAD
+    0x000004d8   0x00000034   Code   RO         3764    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(vsnprintf.o)
+    0x0000050c   0x0000002c   Code   RO         3768    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__2sprintf.o)
+    0x00000538   0x0000004e   Code   RO         3776    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_pad.o)
+    0x00000586   0x00000024   Code   RO         3778    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_truncate.o)
+    0x000005aa   0x00000052   Code   RO         3780    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_str.o)
+    0x000005fc   0x00000078   Code   RO         3782    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_dec.o)
+    0x00000674   0x00000028   Code   RO         3784    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_charcount.o)
+    0x0000069c   0x000000bc   Code   RO         3786    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_wctomb.o)
+    0x00000758   0x00000070   Code   RO         3793    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_oct_int_ll.o)
+    0x000007c8   0x00000094   Code   RO         3813    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_hex_int_ll_ptr.o)
+    0x0000085c   0x00000188   Code   RO         3833    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__printf_flags_ss_wp.o)
+    0x000009e4   0x00000064   Code   RO         3859    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fflush.o)
+    0x00000a48   0x000000f8   Code   RO         3873    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fseek.o)
+    0x00000b40   0x000000f0   Code   RO         3877    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fopen.o)
+    0x00000c30   0x00000014   Code   RO         3879    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(setbuf.o)
+    0x00000c44   0x0000004c   Code   RO         3881    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fclose.o)
+    0x00000c90   0x0000001c   Code   RO         3895    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strspn.o)
+    0x00000cac   0x00000058   Code   RO         3897    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(memcmp.o)
+    0x00000d04   0x00000048   Code   RO         3899    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcpy.o)
+    0x00000d4c   0x0000003e   Code   RO         3901    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strlen.o)
+    0x00000d8a   0x00000064   Code   RO         3905    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memcpy_w.o)
+    0x00000dee   0x00000010   Code   RO         3909    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(aeabi_memset4.o)
+    0x00000dfe   0x00000044   Code   RO         3911    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr.o)
+    0x00000e42   0x0000004e   Code   RO         3913    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_memclr_w.o)
+    0x00000e90   0x0000007c   Code   RO         3915    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(strcmpv7em.o)
+    0x00000f0c   0x00000006   Code   RO         3917    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(heapauxi.o)
+    0x00000f12   0x00000002   PAD
+    0x00000f14   0x00000024   Code   RO         3925    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+    0x00000f38   0x00000002   Code   RO         3963    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(use_no_semi.o)
+    0x00000f3a   0x00000002   PAD
+    0x00000f3c   0x00000008   Code   RO         3972    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_heap_descriptor.o)
+    0x00000f44   0x00000004   Code   RO         3977    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(hguard.o)
+    0x00000f48   0x0000008a   Code   RO         3979    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_alloc.o)
+    0x00000fd2   0x0000000e   Code   RO         3983    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_init.o)
+    0x00000fe0   0x000000b2   Code   RO         3995    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_intcommon.o)
+    0x00001092   0x0000041c   Code   RO         3997    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_fp_dec.o)
+    0x000014ae   0x00000002   PAD
+    0x000014b0   0x000002fc   Code   RO         4001    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_fp_hex.o)
+    0x000017ac   0x00000030   Code   RO         4004    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_char_common.o)
+    0x000017dc   0x0000000a   Code   RO         4006    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_sputc.o)
+    0x000017e6   0x00000010   Code   RO         4008    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_snputc.o)
+    0x000017f6   0x0000002c   Code   RO         4010    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_char.o)
+    0x00001822   0x00000002   PAD
+    0x00001824   0x00000024   Code   RO         4012    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_char_file.o)
+    0x00001848   0x0000002c   Code   RO         4014    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_wchar.o)
+    0x00001874   0x0000007c   Code   RO         4016    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_longlong_dec.o)
+    0x000018f0   0x00000008   Code   RO         4043    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(ferror.o)
+    0x000018f8   0x0000023a   Code   RO         4045    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(filbuf.o)
+    0x00001b32   0x000001d6   Code   RO         4047    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(flsbuf.o)
+    0x00001d08   0x00000042   Code   RO         4049    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(ftell.o)
+    0x00001d4a   0x00000046   Code   RO         4051    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(setvbuf.o)
+    0x00001d90   0x000000f0   Code   RO         4053    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio.o)
+    0x00001e80   0x00000048   Code   RO         4066    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_c16rtomb.o)
+    0x00001ec8   0x00000010   Code   RO         4158    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_ctype_table.o)
+    0x00001ed8   0x00000008   Code   RO         4162    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_locale.o)
+    0x00001ee0   0x00000000   Code   RO         4169    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(maybetermalloc1.o)
+    0x00001ee0   0x00000034   Code   RO         4171    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(h1_extend.o)
+    0x00001f14   0x0000008a   Code   RO         4175    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lludiv10.o)
+    0x00001f9e   0x00000002   PAD
+    0x00001fa0   0x00000080   Code   RO         4179    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_fp_infnan.o)
+    0x00002020   0x000000e4   Code   RO         4195    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(bigflt0.o)
+    0x00002104   0x00000138   Code   RO         4230    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(initio.o)
+    0x0000223c   0x00000038   Code   RO         4232    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(flushlinebuffered.o)
+    0x00002274   0x00000016   Code   RO         4255    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(abort.o)
+    0x0000228a   0x0000000e   Code   RO         4257    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_outer.o)
+    0x00002298   0x0000000a   Code   RO         4290    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_exit.o)
+    0x000022a2   0x0000000e   Code   RO         4292    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_abrt_outer.o)
+    0x000022b0   0x0000000e   Code   RO         4300    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_outer.o)
+    0x000022be   0x00000002   PAD
+    0x000022c0   0x00000050   Code   RO         4304    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtmem_inner.o)
+    0x00002310   0x00000032   Code   RO         4361    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_general.o)
+    0x00002342   0x00000002   PAD
+    0x00002344   0x00000030   Code   RO         4363    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_abrt_inner.o)
+    0x00002374   0x00000034   Code   RO         4367    .text               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(defsig_rtred_inner.o)
+    0x000023a8   0x0000002e   Code   RO         2208    .text.$Sub$$__rt_lib_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x000023d6   0x0000000e   Code   RO         2381    .text.$Sub$$main    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_sdk_boot.o
+    0x000023e4   0x00000192   Code   RO         3255    .text.GPIOTE_IRQHandler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x00002576   0x00000010   Code   RO         2446    .text.NVIC_SetVector  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/TARGET_MCU_NRF52832/device/cmsis_nvic.o
+    0x00002586   0x00000028   Code   RO         3330    .text.RNG_IRQHandler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_rng.o
+    0x000025ae   0x00000002   PAD
+    0x000025b0   0x0000033e   Code   RO         2454    .text.SystemInit    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/TARGET_MCU_NRF52832/device/system_nrf52.o
+    0x000028ee   0x00000002   PAD
+    0x000028f0   0x00000114   Code   RO            5    .text._GLOBAL__sub_I_main.cpp  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002a04   0x0000002a   Code   RO         3672    .text._GLOBAL__sub_I_nworkbench.cpp  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002a2e   0x00000002   PAD
+    0x00002a30   0x00000076   Code   RO         3670    .text._Z13ProgressNodesv  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002aa6   0x00000010   Code   RO         3666    .text._Z13propagateTickv  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002ab6   0x0000004a   Code   RO         3668    .text._Z14SetupWorkbenchv  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b00   0x0000004a   Code   RO         2162    .text._ZL18reserve_filehandlev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002b4a   0x00000010   Code   RO         1510    .text._ZN10CThunkBase11cthunk_freeEPFvvE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/CThunkBase.o
+    0x00002b5a   0x00000004   Code   RO         3652    .text._ZN10nBlockNode10readOutputEj  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b5e   0x00000002   Code   RO         3654    .text._ZN10nBlockNode12triggerInputE15nBlocks_Message  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b60   0x00000004   Code   RO         3685    .text._ZN10nBlockNode14readOutputTypeEj  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b64   0x00000004   Code   RO         3650    .text._ZN10nBlockNode15outputAvailableEj  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b68   0x00000002   Code   RO         3656    .text._ZN10nBlockNode4stepEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b6a   0x0000002c   Code   RO         3644    .text._ZN10nBlockNodeC2Ev  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002b96   0x0000001c   Code   RO         2146    .text._ZN12DirectSerial4readEPvj  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002bb2   0x00000006   Code   RO         2321    .text._ZN12DirectSerial4seekEli  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002bb8   0x00000006   Code   RO         2327    .text._ZN12DirectSerial4sizeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002bbe   0x00000004   Code   RO         2323    .text._ZN12DirectSerial5closeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002bc2   0x00000002   PAD
+    0x00002bc4   0x00000028   Code   RO         2144    .text._ZN12DirectSerial5writeEPKvj  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002bec   0x00000004   Code   RO         2325    .text._ZN12DirectSerial6isattyEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002bf0   0x0000003a   Code   RO         2142    .text._ZN12DirectSerialC2ERK15serial_pinmap_ti  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002c2a   0x00000004   Code   RO         2319    .text._ZN12DirectSerialD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00002c2e   0x00000002   PAD
+    0x00002c30   0x00000054   Code   RO         3569    .text._ZN12nBlock_Blink5_tickEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Blink/blink.o
+    0x00002c84   0x00000004   PAD
+    0x00002c88   0x000000cc   Code   RO         3567    .text._ZN12nBlock_BlinkC2Ej7PinName  BUILD/NRF52_DK/ARMC6_SIM/nlib/Blink/blink.o
+    0x00002d54   0x0000001e   Code   RO           26    .text._ZN12nBlock_BlinkD2Ev  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002d72   0x00000008   Code   RO         3617    .text._ZN13nBlock_Ticker5_tickEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Ticker/ticker.o
+    0x00002d7a   0x00000006   PAD
+    0x00002d80   0x000000bc   Code   RO         3615    .text._ZN13nBlock_TickerC2Ej  BUILD/NRF52_DK/ARMC6_SIM/nlib/Ticker/ticker.o
+    0x00002e3c   0x0000001e   Code   RO           22    .text._ZN13nBlock_TickerD2Ev  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002e5a   0x00000024   Code   RO         3583    .text._ZN14nBlock_Counter12triggerInputE15nBlocks_Message  BUILD/NRF52_DK/ARMC6_SIM/nlib/Counter/counter.o
+    0x00002e7e   0x00000016   Code   RO         3585    .text._ZN14nBlock_Counter8endFrameEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Counter/counter.o
+    0x00002e94   0x00000026   Code   RO         3581    .text._ZN14nBlock_CounterC2Ej  BUILD/NRF52_DK/ARMC6_SIM/nlib/Counter/counter.o
+    0x00002eba   0x00000002   PAD
+    0x00002ebc   0x000000ac   Code   RO         3662    .text._ZN16nBlockConnection9propagateEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002f68   0x00000036   Code   RO         3658    .text._ZN16nBlockConnectionC2EP10nBlockNodejS1_j  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00002f9e   0x00000008   Code   RO           34    .text._ZN16nBlockSimpleNodeILj1EE10readOutputEj  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002fa6   0x00000006   Code   RO           32    .text._ZN16nBlockSimpleNodeILj1EE14readOutputTypeEj  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002fac   0x00000008   Code   RO           30    .text._ZN16nBlockSimpleNodeILj1EE15outputAvailableEj  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002fb4   0x0000001a   Code   RO           36    .text._ZN16nBlockSimpleNodeILj1EE4stepEv  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002fce   0x00000002   Code   RO           38    .text._ZN16nBlockSimpleNodeILj1EE8endFrameEv  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00002fd0   0x0000004c   Code   RO         3599    .text._ZN19nBlock_StringFormat12triggerInputE15nBlocks_Message  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringFormat/stringformat.o
+    0x0000301c   0x00000020   Code   RO         3601    .text._ZN19nBlock_StringFormat8endFrameEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringFormat/stringformat.o
+    0x0000303c   0x0000002e   Code   RO         3597    .text._ZN19nBlock_StringFormatC2EPKc  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringFormat/stringformat.o
+    0x0000306a   0x00000002   PAD
+    0x0000306c   0x0000003c   Code   RO         3608    .text._ZN19nBlock_StringSerial12triggerInputE15nBlocks_Message  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringSerial/stringserial.o
+    0x000030a8   0x0000001c   Code   RO         3610    .text._ZN19nBlock_StringSerial8endFrameEv  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringSerial/stringserial.o
+    0x000030c4   0x00000042   Code   RO         3606    .text._ZN19nBlock_StringSerialC2E7PinNameS0_  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringSerial/stringserial.o
+    0x00003106   0x00000026   Code   RO           24    .text._ZN19nBlock_StringSerialD2Ev  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x0000312c   0x00000066   Code   RO         3592    .text._ZN21nBlock_SimulatedRadio12triggerInputE15nBlocks_Message  BUILD/NRF52_DK/ARMC6_SIM/nlib/SimulatedRadio/simulatedradio.o
+    0x00003192   0x00000042   Code   RO         3590    .text._ZN21nBlock_SimulatedRadioC2Ejj  BUILD/NRF52_DK/ARMC6_SIM/nlib/SimulatedRadio/simulatedradio.o
+    0x000031d4   0x00000006   Code   RO          574    .text._ZN4mbed10FileHandle12enable_inputEb  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000031da   0x0000000c   Code   RO          570    .text._ZN4mbed10FileHandle12set_blockingEb  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000031e6   0x00000006   Code   RO          576    .text._ZN4mbed10FileHandle13enable_outputEb  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000031ec   0x00000006   Code   RO          568    .text._ZN4mbed10FileHandle4flenEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000031f2   0x00000038   Code   RO         1607    .text._ZN4mbed10FileHandle4sizeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileHandle.o
+    0x0000322a   0x00000004   Code   RO         1615    .text._ZN4mbed10FileHandle4syncEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileHandle.o
+    0x0000322e   0x0000000a   Code   RO          842    .text._ZN4mbed10FileHandle4tellEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/UARTSerial.o
+    0x00003238   0x00000006   Code   RO          566    .text._ZN4mbed10FileHandle5fsyncEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x0000323e   0x00000006   Code   RO          564    .text._ZN4mbed10FileHandle5lseekEli  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003244   0x00000002   Code   RO          580    .text._ZN4mbed10FileHandle5sigioENS_8CallbackIFvvEEE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003246   0x00000004   Code   RO         1617    .text._ZN4mbed10FileHandle6isattyEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileHandle.o
+    0x0000324a   0x0000000a   Code   RO          844    .text._ZN4mbed10FileHandle6rewindEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/UARTSerial.o
+    0x00003254   0x00000006   Code   RO          562    .text._ZN4mbed10FileHandle8truncateEl  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x0000325a   0x00000002   Code   RO         1613    .text._ZN4mbed10FileHandleD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileHandle.o
+    0x0000325c   0x00000002   Code   RO         1611    .text._ZN4mbed10FileHandleD2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileHandle.o
+    0x0000325e   0x00000006   Code   RO          607    .text._ZN4mbed10SerialBase10_base_getcEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003264   0x0000000e   Code   RO          609    .text._ZN4mbed10SerialBase10_base_putcEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003272   0x00000012   Code   RO          605    .text._ZN4mbed10SerialBase12_irq_handlerEj9SerialIrq  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003284   0x00000002   Code   RO          623    .text._ZN4mbed10SerialBase4lockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003286   0x0000005a   Code   RO          589    .text._ZN4mbed10SerialBase5_initEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x000032e0   0x0000009c   Code   RO          603    .text._ZN4mbed10SerialBase6attachENS_8CallbackIFvvEEENS0_7IrqTypeE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x0000337c   0x00000002   Code   RO          625    .text._ZN4mbed10SerialBase6unlockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x0000337e   0x00000024   Code   RO          599    .text._ZN4mbed10SerialBase8readableEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x000033a2   0x00000002   PAD
+    0x000033a4   0x000000e4   Code   RO          587    .text._ZN4mbed10SerialBaseC2E7PinNameS1_i  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003488   0x0000000e   Code   RO          629    .text._ZN4mbed10SerialBaseD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003496   0x00000002   PAD
+    0x00003498   0x00000080   Code   RO          627    .text._ZN4mbed10SerialBaseD2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003518   0x00000018   Code   RO          736    .text._ZN4mbed10TimerEvent15insert_absoluteEy  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00003530   0x00000006   Code   RO          724    .text._ZN4mbed10TimerEvent3irqEj  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00003536   0x0000000c   Code   RO          730    .text._ZN4mbed10TimerEvent6removeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00003542   0x00000030   Code   RO          722    .text._ZN4mbed10TimerEventC2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00003572   0x00000002   Code   RO          732    .text._ZN4mbed10TimerEventD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00003574   0x0000001e   Code   RO          728    .text._ZN4mbed10TimerEventD2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00003592   0x0000008e   Code   RO         2158    .text._ZN4mbed16mbed_file_handleEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003620   0x0000003e   Code   RO         2138    .text._ZN4mbed17remove_filehandleEPNS_10FileHandleE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000365e   0x00000004   Code   RO         2156    .text._ZN4mbed21mbed_override_consoleEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003662   0x00000006   Code   RO         2168    .text._ZN4mbed26mbed_set_unbuffered_streamEPSt6__FILE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003668   0x00000004   Code   RO         2154    .text._ZN4mbed28mbed_target_override_consoleEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000366c   0x00000002   Code   RO          544    .text._ZN4mbed6Serial4lockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x0000366e   0x00000004   Code   RO          536    .text._ZN4mbed6Serial5_getcEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003672   0x00000004   Code   RO          540    .text._ZN4mbed6Serial5_putcEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003676   0x00000002   Code   RO          548    .text._ZN4mbed6Serial6unlockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003678   0x00000036   Code   RO          528    .text._ZN4mbed6SerialC2E7PinNameS1_PKci  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000036ae   0x00000018   Code   RO          556    .text._ZN4mbed6SerialD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000036c6   0x00000014   Code   RO          554    .text._ZN4mbed6SerialD2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x000036da   0x00000026   Code   RO         1671    .text._ZN4mbed6Stream4getcEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003700   0x00000002   Code   RO         1703    .text._ZN4mbed6Stream4lockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003702   0x0000002e   Code   RO         1667    .text._ZN4mbed6Stream4putcEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003730   0x00000040   Code   RO         1679    .text._ZN4mbed6Stream4readEPvj  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003770   0x00000004   Code   RO         1681    .text._ZN4mbed6Stream4seekEli  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003774   0x00000004   Code   RO         1691    .text._ZN4mbed6Stream4sizeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003778   0x00000004   Code   RO         1689    .text._ZN4mbed6Stream4syncEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x0000377c   0x00000004   Code   RO         1683    .text._ZN4mbed6Stream4tellEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003780   0x00000004   Code   RO         1675    .text._ZN4mbed6Stream5closeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003784   0x00000042   Code   RO         1677    .text._ZN4mbed6Stream5writeEPKvj  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x000037c6   0x00000004   Code   RO         1687    .text._ZN4mbed6Stream6isattyEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x000037ca   0x00000044   Code   RO         1693    .text._ZN4mbed6Stream6printfEPKcz  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x0000380e   0x00000002   Code   RO         1685    .text._ZN4mbed6Stream6rewindEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003810   0x00000002   Code   RO         1705    .text._ZN4mbed6Stream6unlockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003812   0x00000002   PAD
+    0x00003814   0x00000074   Code   RO         1657    .text._ZN4mbed6StreamC2EPKc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003888   0x00000002   Code   RO         1663    .text._ZN4mbed6StreamD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x0000388a   0x0000002c   Code   RO         1659    .text._ZN4mbed6StreamD2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x000038b6   0x00000030   Code   RO          677    .text._ZN4mbed6Ticker5setupEy  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x000038e6   0x00000046   Code   RO          675    .text._ZN4mbed6Ticker6detachEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x0000392c   0x00000028   Code   RO          679    .text._ZN4mbed6Ticker7handlerEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x00003954   0x0000003c   Code   RO          681    .text._ZN4mbed6Ticker9attach_usENS_8CallbackIFvvEEEy  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x00003990   0x00000028   Code   RO          671    .text._ZN4mbed6TickerC2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x000039b8   0x0000000e   Code   RO          685    .text._ZN4mbed6TickerD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x000039c6   0x0000002c   Code   RO           28    .text._ZN4mbed6TickerD2Ev  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x000039f2   0x00000044   Code   RO         2170    .text._ZN4mbed6fdopenEPNS_10FileHandleEPKc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003a36   0x00000014   Code   RO         3573    .text._ZN4mbed8CallbackIFvvEE13function_callINS2_14method_contextI12nBlock_BlinkMS5_FvvEEEEEvPKv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Blink/blink.o
+    0x00003a4a   0x00000014   Code   RO         3620    .text._ZN4mbed8CallbackIFvvEE13function_callINS2_14method_contextI13nBlock_TickerMS5_FvvEEEEEvPKv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Ticker/ticker.o
+    0x00003a5e   0x00000004   Code   RO          311    .text._ZN4mbed8CallbackIFvvEE13function_callIPS1_EEvPKv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/InterruptManager.o
+    0x00003a62   0x00000002   Code   RO         3577    .text._ZN4mbed8CallbackIFvvEE13function_dtorINS2_14method_contextI12nBlock_BlinkMS5_FvvEEEEEvPv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Blink/blink.o
+    0x00003a64   0x00000002   Code   RO         3624    .text._ZN4mbed8CallbackIFvvEE13function_dtorINS2_14method_contextI13nBlock_TickerMS5_FvvEEEEEvPv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Ticker/ticker.o
+    0x00003a66   0x00000002   Code   RO          315    .text._ZN4mbed8CallbackIFvvEE13function_dtorIPS1_EEvPv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/InterruptManager.o
+    0x00003a68   0x0000000e   Code   RO         3575    .text._ZN4mbed8CallbackIFvvEE13function_moveINS2_14method_contextI12nBlock_BlinkMS5_FvvEEEEEvPvPKv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Blink/blink.o
+    0x00003a76   0x0000000e   Code   RO         3622    .text._ZN4mbed8CallbackIFvvEE13function_moveINS2_14method_contextI13nBlock_TickerMS5_FvvEEEEEvPvPKv  BUILD/NRF52_DK/ARMC6_SIM/nlib/Ticker/ticker.o
+    0x00003a84   0x00000006   Code   RO          313    .text._ZN4mbed8CallbackIFvvEE13function_moveIPS1_EEvPvPKv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/InterruptManager.o
+    0x00003a8a   0x00000032   Code   RO          282    .text._ZN4mbed8CallbackIFvvEEaSERKS2_  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/InterruptIn.o
+    0x00003abc   0x00000004   Code   RO         1588    .text._ZN4mbed8FileBase11getPathTypeEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x00003ac0   0x00000094   Code   RO         1594    .text._ZN4mbed8FileBase6lookupEPKcj  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x00003b54   0x0000004a   Code   RO         1584    .text._ZN4mbed8FileBaseC2EPKcNS_8PathTypeE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x00003b9e   0x0000000e   Code   RO         1590    .text._ZN4mbed8FileBaseD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x00003bac   0x0000006e   Code   RO         1586    .text._ZN4mbed8FileBaseD2Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x00003c1a   0x0000001e   Code   RO         1626    .text._ZN4mbed8FilePath10fileSystemEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00003c38   0x0000001c   Code   RO         1630    .text._ZN4mbed8FilePath4fileEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00003c54   0x0000000a   Code   RO         1632    .text._ZN4mbed8FilePath6existsEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00003c5e   0x00000016   Code   RO         1628    .text._ZN4mbed8FilePath6isFileEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00003c74   0x00000004   Code   RO         1622    .text._ZN4mbed8FilePath8fileNameEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00003c78   0x0000005c   Code   RO         1620    .text._ZN4mbed8FilePathC2EPKc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00003cd4   0x0000002a   Code   RO          660    .text._ZN6CThunkIN4mbed10SerialBaseEE10trampolineEP10CThunkBase  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00003cfe   0x0000003a   Code   RO         2148    .text._ZNK12DirectSerial4pollEs  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003d38   0x00000030   Code   RO         2370    .text._ZNK12SingletonPtrI13PlatformMutexE3getEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_rtc_time.o
+    0x00003d68   0x00000004   Code   RO          572    .text._ZNK4mbed10FileHandle11is_blockingEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d6c   0x00000004   Code   RO          578    .text._ZNK4mbed10FileHandle4pollEs  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d70   0x00000002   Code   RO          546    .text._ZThn252_N4mbed6Serial4lockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d72   0x00000006   Code   RO          538    .text._ZThn252_N4mbed6Serial5_getcEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d78   0x00000006   Code   RO          542    .text._ZThn252_N4mbed6Serial5_putcEi  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d7e   0x00000002   Code   RO          550    .text._ZThn252_N4mbed6Serial6unlockEv  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d80   0x00000018   Code   RO          560    .text._ZThn252_N4mbed6SerialD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003d98   0x00000014   Code   RO          558    .text._ZThn252_N4mbed6SerialD1Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003dac   0x0000001a   Code   RO          584    .text._ZThn256_N4mbed6SerialD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003dc6   0x00000016   Code   RO          582    .text._ZThn256_N4mbed6SerialD1Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00003ddc   0x00000002   Code   RO         1665    .text._ZThn4_N4mbed6StreamD0Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003dde   0x0000002a   Code   RO         1661    .text._ZThn4_N4mbed6StreamD1Ev  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00003e08   0x00000004   Code   RO         2284    .text._ZdlPv        BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003e0c   0x00000024   Code   RO         2456    .text.__NVIC_SystemReset  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/TARGET_MCU_NRF52832/device/system_nrf52.o
+    0x00003e30   0x00000004   Code   RO         2250    .text.__cxa_atexit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003e34   0x00000058   Code   RO         2270    .text.__cxa_guard_acquire  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003e8c   0x0000002e   Code   RO         2272    .text.__cxa_guard_release  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003eba   0x00000002   PAD
+    0x00003ebc   0x00000028   Code   RO         3955    .text.__cxa_pure_virtual  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcppabi_w.l(cxa_virtual.cpp.o)
+    0x00003ee4   0x00000004   Code   RO         2383    .text._platform_post_stackheap_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_sdk_boot.o
+    0x00003ee8   0x00000004   Code   RO         2176    .text._sys_close    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003eec   0x00000002   Code   RO         2184    .text._sys_exit     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003eee   0x00000028   Code   RO         2204    .text._sys_flen     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003f16   0x00000004   Code   RO         2192    .text._sys_istty    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003f1a   0x0000008a   Code   RO         2172    .text._sys_open     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003fa4   0x0000002a   Code   RO         2188    .text._sys_read     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003fce   0x00000006   Code   RO         2194    .text._sys_seek     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00003fd4   0x0000002c   Code   RO         2180    .text._sys_write    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00004000   0x00000018   Code   RO         2186    .text._ttywrch      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00004018   0x00000004   Code   RO         4135    .text.abort_message  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\libcxx\libcppabi_w.l(abort_message.cpp.o)
+    0x0000401c   0x00000004   Code   RO         3134    .text.app_util_critical_region_enter  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/util/app_util_platform.o
+    0x00004020   0x00000004   Code   RO         3136    .text.app_util_critical_region_exit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/util/app_util_platform.o
+    0x00004024   0x0000003a   Code   RO         2178    .text.close         BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000405e   0x0000000c   Code   RO         1992    .text.core_util_are_interrupts_enabled  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_critical.o
+    0x0000406a   0x00000002   PAD
+    0x0000406c   0x0000005c   Code   RO         1998    .text.core_util_critical_section_enter  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_critical.o
+    0x000040c8   0x00000018   Code   RO         2000    .text.core_util_critical_section_exit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_critical.o
+    0x000040e0   0x0000000c   Code   RO         1994    .text.core_util_is_isr_active  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_critical.o
+    0x000040ec   0x0000000a   Code   RO         2246    .text.exit          BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x000040f6   0x00000030   Code   RO         2164    .text.fdopen        BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00004126   0x00000006   Code   RO         2972    .text.fs_event_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x0000412c   0x00000048   Code   RO         3026    .text.gc_page_erase  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x00004174   0x00000052   Code   RO         3024    .text.gc_record_find_next  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x000041c6   0x0000000a   Code   RO         1431    .text.get_us_ticker_data  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x000041d0   0x000000e6   Code   RO         2529    .text.gpio_apply_config  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x000042b6   0x0000004a   Code   RO         2531    .text.gpio_dir      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x00004300   0x00000050   Code   RO         2519    .text.gpio_init     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x00004350   0x00000006   Code   RO         1333    .text.gpio_init_out  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_gpio.o
+    0x00004356   0x00000058   Code   RO         1335    .text.gpio_init_out_ex  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_gpio.o
+    0x000043ae   0x0000004a   Code   RO         2525    .text.gpio_mode     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x000043f8   0x00000044   Code   RO         2521    .text.gpio_read     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x0000443c   0x00000062   Code   RO         2543    .text.gpiote_irq_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x0000449e   0x00000032   Code   RO         2527    .text.gpiote_pin_uninit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x000044d0   0x0000001a   Code   RO         2488    .text.hal_critical_section_enter  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/critical_section_api.o
+    0x000044ea   0x00000012   Code   RO         2490    .text.hal_critical_section_exit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/critical_section_api.o
+    0x000044fc   0x000000ea   Code   RO         2008    .text.handle_error  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x000045e6   0x00000002   PAD
+    0x000045e8   0x00000150   Code   RO         1404    .text.initialize    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00004738   0x00000026   Code   RO         2166    .text.isatty        BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000475e   0x00000030   Code   RO         2196    .text.lseek         BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000478e   0x00000002   PAD
+    0x00004790   0x0000000a   Code   RO            3    .text.main          BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x0000479a   0x0000001a   Code   RO         1879    .text.mbed_assert_internal  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_assert.o
+    0x000047b4   0x000000a2   Code   RO         1979    .text.mbed_die      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_board.o
+    0x00004856   0x00000032   Code   RO         2028    .text.mbed_error    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x00004888   0x00000020   Code   RO         1981    .text.mbed_error_printf  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_board.o
+    0x000048a8   0x0000002a   Code   RO         1985    .text.mbed_error_puts  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_board.o
+    0x000048d2   0x00000034   Code   RO         1983    .text.mbed_error_vprintf  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_board.o
+    0x00004906   0x00000002   PAD
+    0x00004908   0x000000fc   Code   RO         1860    .text.mbed_fault_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x00004a04   0x0000003e   Code   RO         2012    .text.mbed_halt_system  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x00004a42   0x00000002   Code   RO         2373    .text.mbed_main     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_sdk_boot.o
+    0x00004a44   0x00000050   Code   RO         2654    .text.mbed_sdk_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/reloc_vector_table.o
+    0x00004a94   0x00000106   Code   RO         2666    .text.nordic_nrf5_serial_configure  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00004b9a   0x00000002   PAD
+    0x00004b9c   0x00000148   Code   RO         2664    .text.nordic_nrf5_uart0_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00004ce4   0x000001c0   Code   RO         2678    .text.nordic_nrf5_uart_configure_object  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00004ea4   0x0000006e   Code   RO         2720    .text.nordic_nrf5_uart_configure_rx  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00004f12   0x00000082   Code   RO         2662    .text.nordic_nrf5_uart_swi0  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00004f94   0x00000010   Code   RO         1439    .text.note_us_ticker_free  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x00004fa4   0x00000014   Code   RO         1437    .text.note_us_ticker_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x00004fb8   0x00000046   Code   RO         2917    .text.nrf_atfifo_clear  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic_fifo/nrf_atfifo.o
+    0x00004ffe   0x0000002a   Code   RO         2915    .text.nrf_atfifo_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic_fifo/nrf_atfifo.o
+    0x00005028   0x00000058   Code   RO         2921    .text.nrf_atfifo_item_alloc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic_fifo/nrf_atfifo.o
+    0x00005080   0x00000020   Code   RO         2929    .text.nrf_atfifo_item_free  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic_fifo/nrf_atfifo.o
+    0x000050a0   0x00000058   Code   RO         2927    .text.nrf_atfifo_item_get  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic_fifo/nrf_atfifo.o
+    0x000050f8   0x00000020   Code   RO         2923    .text.nrf_atfifo_item_put  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic_fifo/nrf_atfifo.o
+    0x00005118   0x00000016   Code   RO         2897    .text.nrf_atomic_u32_sub  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/atomic/nrf_atomic.o
+    0x0000512e   0x0000004e   Code   RO         3061    .text.nrf_fstorage_erase  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fstorage/nrf_fstorage.o
+    0x0000517c   0x00000064   Code   RO         3059    .text.nrf_fstorage_write  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fstorage/nrf_fstorage.o
+    0x000051e0   0x00000026   Code   RO         2652    .text.nrf_reloc_vector_table  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/reloc_vector_table.o
+    0x00005206   0x00000024   Code   RO         3243    .text.nrfx_gpiote_clr_task_trigger  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x0000522a   0x000000a8   Code   RO         3247    .text.nrfx_gpiote_in_event_enable  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x000052d2   0x00000002   PAD
+    0x000052d4   0x000000ec   Code   RO         3245    .text.nrfx_gpiote_in_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x000053c0   0x000000b0   Code   RO         3217    .text.nrfx_gpiote_in_uninit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x00005470   0x00000082   Code   RO         3209    .text.nrfx_gpiote_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x000054f2   0x00000014   Code   RO         3211    .text.nrfx_gpiote_is_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x00005506   0x00000002   PAD
+    0x00005508   0x000000ca   Code   RO         3219    .text.nrfx_gpiote_out_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x000055d2   0x0000001c   Code   RO         3231    .text.nrfx_gpiote_out_task_addr_get  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x000055ee   0x00000024   Code   RO         3227    .text.nrfx_gpiote_out_task_enable  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x00005612   0x00000064   Code   RO         3215    .text.nrfx_gpiote_out_uninit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x00005676   0x00000002   PAD
+    0x00005678   0x00000062   Code   RO         3267    .text.nrfx_ppi_channel_alloc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_ppi.o
+    0x000056da   0x0000003c   Code   RO         3271    .text.nrfx_ppi_channel_assign  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_ppi.o
+    0x00005716   0x00000032   Code   RO         3277    .text.nrfx_ppi_channel_disable  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_ppi.o
+    0x00005748   0x00000032   Code   RO         3275    .text.nrfx_ppi_channel_enable  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_ppi.o
+    0x0000577a   0x000000a6   Code   RO         2174    .text.open          BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00005820   0x00000082   Code   RO         2615    .text.pin_instance_uart  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/pinmap_ex.o
+    0x000058a2   0x00000002   PAD
+    0x000058a4   0x00000170   Code   RO         1862    .text.print_context_info  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x00005a14   0x00000190   Code   RO         2010    .text.print_error_report  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x00005ba4   0x00000726   Code   RO         3022    .text.queue_process  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x000062ca   0x00000030   Code   RO         2190    .text.read          BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x000062fa   0x00000002   PAD
+    0x000062fc   0x00000098   Code   RO         3008    .text.record_find   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x00006394   0x000000b8   Code   RO         2982    .text.record_find_by_desc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x0000644c   0x00000062   Code   RO         3028    .text.record_find_next  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x000064ae   0x00000002   PAD
+    0x000064b0   0x00000144   Code   RO         1410    .text.schedule_interrupt  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x000065f4   0x00000022   Code   RO         2864    .text.sd_nvic_critical_region_enter  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/TARGET_SOFTDEVICE_NONE/nrf_soc_nosd/nrf_nvic.o
+    0x00006616   0x0000001c   Code   RO         2866    .text.sd_nvic_critical_region_exit  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/TARGET_SOFTDEVICE_NONE/nrf_soc_nosd/nrf_nvic.o
+    0x00006632   0x000000fe   Code   RO         2670    .text.serial_baud   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00006730   0x00000082   Code   RO         2690    .text.serial_getc   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x000067b2   0x00000002   PAD
+    0x000067b4   0x0000019c   Code   RO         2660    .text.serial_init   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00006950   0x0000000e   Code   RO         1458    .text.serial_init_direct  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/static_pinmap.o
+    0x0000695e   0x00000022   Code   RO         2686    .text.serial_irq_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00006980   0x0000003c   Code   RO         2688    .text.serial_irq_set  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x000069bc   0x00000080   Code   RO         2692    .text.serial_putc   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00006a3c   0x00000046   Code   RO         2694    .text.serial_readable  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00006a82   0x00000048   Code   RO         2696    .text.serial_writable  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00006aca   0x00000002   PAD
+    0x00006acc   0x00000060   Code   RO         2125    .text.sleep_manager_lock_deep_sleep_internal  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_power_mgmt.o
+    0x00006b2c   0x00000064   Code   RO         2127    .text.sleep_manager_unlock_deep_sleep_internal  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_power_mgmt.o
+    0x00006b90   0x00000078   Code   RO         1414    .text.ticker_insert_event_us  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006c08   0x00000062   Code   RO         1406    .text.ticker_irq_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006c6a   0x00000008   Code   RO         1418    .text.ticker_read   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006c72   0x00000022   Code   RO         1420    .text.ticker_read_us  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006c94   0x00000036   Code   RO         1416    .text.ticker_remove_event  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006cca   0x0000001a   Code   RO         1402    .text.ticker_set_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006ce4   0x000000e8   Code   RO         1408    .text.update_present_time  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x00006dcc   0x00000018   Code   RO         2816    .text.us_ticker_clear_interrupt  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006de4   0x00000010   Code   RO         2814    .text.us_ticker_disable_interrupt  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006df4   0x00000010   Code   RO         2812    .text.us_ticker_fire_interrupt  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006e04   0x0000003a   Code   RO         2818    .text.us_ticker_free  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006e3e   0x0000000a   Code   RO         2804    .text.us_ticker_get_info  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006e48   0x000000a4   Code   RO         2806    .text.us_ticker_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006eec   0x00000018   Code   RO         1435    .text.us_ticker_irq_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x00006f04   0x00000012   Code   RO         2808    .text.us_ticker_read  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006f16   0x0000003a   Code   RO         2810    .text.us_ticker_set_interrupt  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x00006f50   0x0000001e   Code   RO         2414    .text.wait_us       BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_wait_api_no_rtos.o
+    0x00006f6e   0x00000030   Code   RO         2182    .text.write         BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00006f9e   0x0000003e   Code   RO         4198    CL$$btod_d2e        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x00006fdc   0x00000046   Code   RO         4200    CL$$btod_d2e_denorm_low  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x00007022   0x00000060   Code   RO         4199    CL$$btod_d2e_norm_op1  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x00007082   0x00000338   Code   RO         4208    CL$$btod_div_common  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x000073ba   0x000000dc   Code   RO         4205    CL$$btod_e2e        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x00007496   0x0000002a   Code   RO         4202    CL$$btod_ediv       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x000074c0   0x0000002a   Code   RO         4201    CL$$btod_emul       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x000074ea   0x00000244   Code   RO         4207    CL$$btod_mult_common  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(btod.o)
+    0x0000772e   0x00000030   Code   RO         4272    i.__ARM_fpclassify  C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\m_wm.l(fpclassify.o)
+    0x0000775e   0x0000000e   Code   RO         3826    i._is_digit         C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__printf_wp.o)
+    0x0000776c   0x00000018   Code   RO         3862    i.fgetc             C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fgetc.o)
+    0x00007784   0x0000001a   Code   RO         3868    i.fputc             C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(fputc.o)
+    0x0000779e   0x00000002   PAD
+    0x000077a0   0x0000002c   Code   RO         4253    locale$$code        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_numeric_c.o)
+    0x000077cc   0x0000002c   Code   RO         4288    locale$$code        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_ctype_c.o)
+    0x000077f8   0x00000062   Code   RO         3928    x$fpl$d2f           C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(d2f.o)
+    0x0000785a   0x00000026   Code   RO         3930    x$fpl$dfltu         C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dflt_clz.o)
+    0x00007880   0x00000154   Code   RO         3936    x$fpl$dmul          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dmul.o)
+    0x000079d4   0x0000009c   Code   RO         4123    x$fpl$dnaninf       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dnaninf.o)
+    0x00007a70   0x0000000c   Code   RO         4125    x$fpl$dretinf       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(dretinf.o)
+    0x00007a7c   0x00000056   Code   RO         3938    x$fpl$f2d           C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(f2d.o)
+    0x00007ad2   0x0000008c   Code   RO         4127    x$fpl$fnaninf       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fnaninf.o)
+    0x00007b5e   0x0000001a   Code   RO         4268    x$fpl$fpinit        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fpinit.o)
+    0x00007b78   0x0000000a   Code   RO         4129    x$fpl$fretinf       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(fretinf.o)
+    0x00007b82   0x00000002   PAD
+    0x00007b84   0x0000005c   Code   RO         3940    x$fpl$llufromf      C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(ffixull.o)
+    0x00007be0   0x00000004   Code   RO         3946    x$fpl$printf1       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(printf1.o)
+    0x00007be4   0x00000004   Code   RO         3948    x$fpl$printf2       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(printf2.o)
+    0x00007be8   0x00000000   Code   RO         4133    x$fpl$usenofp       C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\fz_wm.l(usenofp.o)
+    0x00007be8   0x00000008   Data   RO         3787    .constdata          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_wctomb.o)
+    0x00007bf0   0x00000028   Data   RO         3814    .constdata          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_hex_int_ll_ptr.o)
+    0x00007c18   0x00000011   Data   RO         3834    .constdata          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(__printf_flags_ss_wp.o)
+    0x00007c29   0x00000026   Data   RO         4002    .constdata          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(_printf_fp_hex.o)
+    0x00007c4f   0x00000001   PAD
+    0x00007c50   0x00000094   Data   RO         4196    .constdata          C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(bigflt0.o)
+    0x00007ce4   0x00000000   Data   RO         2385    .rodata             BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_sdk_boot.o
+    0x00007ce4   0x00000008   Data   RO         2435    .rodata.PinMap_UART  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/PeripheralPinsDefault.o
+    0x00007cec   0x0000001c   Data   RO         3681    .rodata._ZTV10nBlockNode  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00007d08   0x0000005c   Data   RO         2305    .rodata._ZTV12DirectSerial  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00007d64   0x00000020   Data   RO           41    .rodata._ZTV12nBlock_Blink  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00007d84   0x00000020   Data   RO           40    .rodata._ZTV13nBlock_Ticker  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00007da4   0x00000020   Data   RO         3587    .rodata._ZTV14nBlock_Counter  BUILD/NRF52_DK/ARMC6_SIM/nlib/Counter/counter.o
+    0x00007dc4   0x00000020   Data   RO         3603    .rodata._ZTV19nBlock_StringFormat  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringFormat/stringformat.o
+    0x00007de4   0x00000020   Data   RO         3612    .rodata._ZTV19nBlock_StringSerial  BUILD/NRF52_DK/ARMC6_SIM/nlib/StringSerial/stringserial.o
+    0x00007e04   0x00000020   Data   RO         3594    .rodata._ZTV21nBlock_SimulatedRadio  BUILD/NRF52_DK/ARMC6_SIM/nlib/SimulatedRadio/simulatedradio.o
+    0x00007e24   0x0000005c   Data   RO         1609    .rodata._ZTVN4mbed10FileHandleE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileHandle.o
+    0x00007e80   0x00000018   Data   RO          657    .rodata._ZTVN4mbed10SerialBaseE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/SerialBase.o
+    0x00007e98   0x00000014   Data   RO          738    .rodata._ZTVN4mbed10TimerEventE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/TimerEvent.o
+    0x00007eac   0x0000009c   Data   RO          552    .rodata._ZTVN4mbed6SerialE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Serial.o
+    0x00007f48   0x0000007c   Data   RO         1701    .rodata._ZTVN4mbed6StreamE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/Stream.o
+    0x00007fc4   0x00000014   Data   RO          683    .rodata._ZTVN4mbed6TickerE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/Ticker.o
+    0x00007fd8   0x00000010   Data   RO         1603    .rodata._ZTVN4mbed8FileBaseE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x00007fe8   0x00000018   Data   RO         2314    .rodata._ZZL15default_consolevE14console_pinmap  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00008000   0x0000000c   Data   RO         3579    .rodata._ZZN4mbed8CallbackIFvvEE8generateINS2_14method_contextI12nBlock_BlinkMS5_FvvEEEEEvRKT_E3ops  BUILD/NRF52_DK/ARMC6_SIM/nlib/Blink/blink.o
+    0x0000800c   0x0000000c   Data   RO         3626    .rodata._ZZN4mbed8CallbackIFvvEE8generateINS2_14method_contextI13nBlock_TickerMS5_FvvEEEEEvRKT_E3ops  BUILD/NRF52_DK/ARMC6_SIM/nlib/Ticker/ticker.o
+    0x00008018   0x0000000c   Data   RO          317    .rodata._ZZN4mbed8CallbackIFvvEE8generateIPS1_EEvRKT_E3ops  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/drivers/source/InterruptManager.o
+    0x00008024   0x00000008   Data   RO         2302    .rodata.__stderr_name  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000802c   0x00000007   Data   RO         2300    .rodata.__stdin_name  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00008033   0x00000008   Data   RO         2301    .rodata.__stdout_name  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x0000803b   0x00000001   PAD
+    0x0000803c   0x00000004   Data   RO         1867    .rodata.mbed_fault_context  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x00008040   0x00000003   Data   RO         2731    .rodata.nordic_nrf5_uart_configure_object.config  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x00008043   0x00000001   PAD
+    0x00008044   0x00000008   Data   RO         3043    .rodata.page_tag_write_data.page_tag_data  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x0000804c   0x00000008   Data   RO         3042    .rodata.page_tag_write_swap.page_tag_swap  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x00008054   0x00000004   Data   RO         3046    .rodata.record_header_flag_dirty.dirty_header  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x00008058   0x0000007d   Data   RO         1342    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_gpio.o
+    0x000080d5   0x0000004a   Data   RO         1428    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_ticker_api.o
+    0x0000811f   0x00000051   Data   RO         1634    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FilePath.o
+    0x00008170   0x000000c8   Data   RO         1868    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x00008238   0x00000054   Data   RO         2003    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_critical.o
+    0x0000828c   0x000000ed   Data   RO         2052    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x00008379   0x0000008d   Data   RO         2308    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x00008406   0x0000006f   Data   RO         2365    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_rtc_time.o
+    0x00008475   0x0000008e   Data   RO         2545    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x00008503   0x00000088   Data   RO         2724    .rodata.str1.1      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x0000858b   0x00000001   PAD
+    0x0000858c   0x00000008   Data   RO         1441    .rodata.us_data     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x00008594   0x00000024   Data   RO         1444    .rodata.us_interface  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x000085b8   0x00000008   Data   RO         2821    .rodata.us_ticker_get_info.info  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x000085c0   0x00000020   Data   RO         4444    Region$$Table       anon$$obj.o
+    0x000085e0   0x0000001c   Data   RO         4252    locale$$data        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_numeric_c.o)
+    0x000085fc   0x00000110   Data   RO         4287    locale$$data        C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(lc_ctype_c.o)
+    0x0000870c   0x00000014   Data   RO         3200    nrf_queue           BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/integration/nrfx/legacy/nrf_drv_rng.o
+    0x00008720   0x00000004   Data   RO           18    .init_array         BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x00008724   0x00000004   Data   RO         3683    .init_array         BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x00008728   0x00000000   Data   RO         3923    .init_array         C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(init_aeabi.o)
+
+
+    Execution Region RW_IRAM0 (Base: 0x20000000, Size: 0x000000dc, Max: 0x000000e0, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x000000dc   Zero   RW         2656    .bss.nvictable      BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/reloc_vector_table.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x200000e0, Size: 0x00000bd8, Max: 0x0000ff20, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x200000e0   0x00000004   Data   RW         4059    .data               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200000e4   0x00000004   Data   RW         4060    .data               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200000e8   0x00000004   Data   RW         4061    .data               C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200000ec   0x00000004   Data   RW         2458    .data.SystemCoreClock  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/TARGET_MCU_NRF52832/device/system_nrf52.o
+    0x200000f0   0x00000040   Data   RW         2313    .data._ZL11filehandles  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x20000130   0x00000004   Data   RW         1442    .data.irq_handler   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x20000134   0x00000002   Data   RW         2619    .data.nordic_internal_uart  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/pinmap_ex.o
+    0x20000136   0x00000001   Data   RW         2494    .data.outside_critical_region  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/critical_section_api.o
+    0x20000137   0x00000001   PAD
+    0x20000138   0x00000014   Data   RW         2515    fs_data             BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/flash_api.o
+    0x2000014c   0x00000014   Data   RW         3032    fs_data             BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000160   0x00000004   Zero   RW         3692    .bss                C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_errno_addr.o)
+    0x20000164   0x00000004   Zero   RW         3973    .bss                C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_heap_descriptor.o)
+    0x20000168   0x00000054   Zero   RW         4056    .bss                C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x200001bc   0x00000054   Zero   RW         4057    .bss                C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x20000210   0x00000054   Zero   RW         4058    .bss                C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(stdio_streams.o)
+    0x20000264   0x00000014   Zero   RW         4163    .bss                C:\Users\nikolaos.chalikias\AppData\Local\Mbed Studio\mbed-studio-tools\ac6\bin\..\lib\armlib\c_w.l(rt_locale.o)
+    0x20000278   0x00000040   Zero   RW         3674    .bss.PropagateTicker  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002b8   0x00000004   Zero   RW         2316    .bss._ZGVZL15default_consolevE7console  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x200002bc   0x00000008   Zero   RW         2312    .bss._ZL16filehandle_mutex  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x200002c4   0x00000004   Zero   RW         1514    .bss._ZN10CThunkBase17_cthunk_free_realE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/CThunkBase.o
+    0x200002c8   0x00000004   Zero   RW         1600    .bss._ZN4mbed8FileBase5_headE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x200002cc   0x00000008   Zero   RW         1601    .bss._ZN4mbed8FileBase6_mutexE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x200002d4   0x00000004   Zero   RW         1602    .bss._ZN4mbed8FileBase8_defaultE  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/FileBase.o
+    0x200002d8   0x00000004   Zero   RW         2315    .bss._ZZL15default_consolevE7console  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_retarget.o
+    0x200002dc   0x00000004   Zero   RW         3675    .bss.__firstNode    BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002e0   0x00000004   Zero   RW         3677    .bss.__first_connection  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002e4   0x00000004   Zero   RW         3678    .bss.__last_connection  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002e8   0x00000004   Zero   RW         3676    .bss.__last_node    BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002ec   0x00000004   Zero   RW         3679    .bss.__propagating  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002f0   0x00000004   Zero   RW         3680    .bss.__tickerElapsed  BUILD/NRF52_DK/ARMC6_SIM/nlib/nworkbench.o
+    0x200002f4   0x00000001   Zero   RW         1443    .bss._us_ticker_initialized  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x200002f5   0x00000003   PAD
+    0x200002f8   0x00000004   Zero   RW         2002    .bss.critical_section_reentrancy_counter  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_critical.o
+    0x200002fc   0x00000002   Zero   RW         2135    .bss.deep_sleep_lock  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_power_mgmt.o
+    0x200002fe   0x00000002   PAD
+    0x20000300   0x00000004   Zero   RW         2049    .bss.error_count    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x20000304   0x00000004   Zero   RW         2050    .bss.error_hook     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x20000308   0x00000040   Zero   RW         1445    .bss.events         BUILD/NRF52_DK/ARMC6_SIM/mbed-os/hal/mbed_us_ticker_api.o
+    0x20000348   0x00000054   Zero   RW         1866    .bss.fault_context  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/TARGET_CORTEX_M/mbed_fault_handler.o
+    0x2000039c   0x00000004   PAD
+    0x200003a0   0x00000008   Zero   RW         3047    .bss.file_find_and_delete.tok  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x200003a8   0x00000034   Zero   RW         2048    .bss.first_error_ctx  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x200003dc   0x00000001   Zero   RW         2051    .bss.halt_in_progress  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x200003dd   0x00000003   PAD
+    0x200003e0   0x00000034   Zero   RW         2047    .bss.last_error_ctx  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x20000414   0x0000005c   Zero   RW         3257    .bss.m_cb           BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_gpiote.o
+    0x20000470   0x00000010   Zero   RW         3034    .bss.m_cb_table     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000480   0x00000080   Zero   RW         2547    .bss.m_channel_ids  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x20000500   0x00000004   Zero   RW         3291    .bss.m_channels_allocated  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_ppi.o
+    0x20000504   0x00000008   Zero   RW         3035    .bss.m_flags        BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x2000050c   0x00000010   Zero   RW         3037    .bss.m_gc           BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x2000051c   0x00000020   Zero   RW         2546    .bss.m_gpio_cfg     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x2000053c   0x00000004   Zero   RW         2550    .bss.m_gpio_initialized  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x20000540   0x00000004   Zero   RW         2549    .bss.m_gpio_irq_enabled  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x20000544   0x00000001   Zero   RW         2868    .bss.m_in_critical_region  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/TARGET_SOFTDEVICE_NONE/nrf_soc_nosd/nrf_nvic.o
+    0x20000545   0x00000003   PAD
+    0x20000548   0x00000004   Zero   RW         2548    .bss.m_irq_handler  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/gpio_api.o
+    0x2000054c   0x00000028   Zero   RW         3036    .bss.m_pages        BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000574   0x00000010   Zero   RW         3040    .bss.m_queue_inst   BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000584   0x00000004   Zero   RW         3048    .bss.m_queued_op_cnt  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000588   0x00000041   Zero   RW         3199    .bss.m_rand_pool_nrf_queue_buffer  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/integration/nrfx/legacy/nrf_drv_rng.o
+    0x200005c9   0x00000003   PAD
+    0x200005cc   0x0000000c   Zero   RW         3198    .bss.m_rand_pool_nrf_queue_cb  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/integration/nrfx/legacy/nrf_drv_rng.o
+    0x200005d8   0x00000004   Zero   RW         3333    .bss.m_rng_hndl     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/modules/nrfx/drivers/src/nrfx_rng.o
+    0x200005dc   0x00000008   Zero   RW         3041    .bss.m_swap_page    BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x200005e4   0x00000001   Zero   RW         2046    .bss.mbed_error_in_progress  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/platform/source/mbed_error.o
+    0x200005e5   0x00000003   PAD
+    0x200005e8   0x00000014   Zero   RW           14    .bss.n_conn0        BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x200005fc   0x00000014   Zero   RW           15    .bss.n_conn1        BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000610   0x00000014   Zero   RW           16    .bss.n_conn2        BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000624   0x00000014   Zero   RW           17    .bss.n_conn3        BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000638   0x00000060   Zero   RW            7    .bss.nb_nBlockNode0_Ticker  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000698   0x00000028   Zero   RW            8    .bss.nb_nBlockNode1_Counter  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x200006c0   0x00000220   Zero   RW            9    .bss.nb_nBlockNode2_StringFormat  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x200008e0   0x00000134   Zero   RW           10    .bss.nb_nBlockNode3_StringSerial  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000a14   0x000000a4   Zero   RW           11    .bss.nb_nBlockNode4_SimulatedRadio  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000ab8   0x000000a4   Zero   RW           12    .bss.nb_nBlockNode5_SimulatedRadio  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000b5c   0x00000004   PAD
+    0x20000b60   0x00000068   Zero   RW           13    .bss.nb_nBlockNode6_Blink  BUILD/NRF52_DK/ARMC6_SIM/main.o
+    0x20000bc8   0x00000021   Zero   RW         2727    .bss.nordic_nrf5_uart_fifo_0_data  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000be9   0x00000003   PAD
+    0x20000bec   0x00000010   Zero   RW         2726    .bss.nordic_nrf5_uart_fifo_0_inst  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000bfc   0x00000028   Zero   RW         2728    .bss.nordic_nrf5_uart_state  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000c24   0x00000001   Zero   RW         2730    .bss.nordic_nrf5_uart_swi_mask_rx_0  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000c25   0x00000001   Zero   RW         2729    .bss.nordic_nrf5_uart_swi_mask_tx_0  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000c26   0x00000002   PAD
+    0x20000c28   0x00000004   Zero   RW         3039    .bss.queue_process.m_iget_ctx  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000c2c   0x00000004   Zero   RW         3038    .bss.queue_process.m_p_cur_op  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000c30   0x00000001   Zero   RW         2725    .bss.serial_init.first_init  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000c31   0x00000003   PAD
+    0x20000c34   0x0000006c   Zero   RW         2723    .bss.stdio_uart     BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000ca0   0x00000004   Zero   RW         2722    .bss.stdio_uart_inited  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/serial_api.o
+    0x20000ca4   0x00000001   Zero   RW         2820    .bss.us_ticker_initialized  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_NRF52/us_ticker.o
+    0x20000ca5   0x00000003   PAD
+    0x20000ca8   0x0000000c   Zero   RW         3044    .bss.write_execute.desc  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+    0x20000cb4   0x00000002   Zero   RW         3045    .bss.write_execute.page  BUILD/NRF52_DK/ARMC6_SIM/mbed-os/targets/TARGET_NORDIC/TARGET_NRF5x/TARGET_SDK_15_0/components/libraries/fds/fds.o
+
+
+    Execution Region ARM_LIB_STACK (Base: 0x2000f000, Size: 0x00001000, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000f000   0x00001000   Zero   RW            1    ARM_LIB_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     19646        938       2548        116       6940      17224   Object Totals
+         0          0         32          0       4096          0   (incl. Generated)
+        58          4          3          1         38          0   (incl. Padding)
+     11854        554        552         12        280       9320   Library Totals
+        24          0          1          0          0          0   (incl. Padding)
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     31500       1492       3100        128       7220      19988   Grand Totals
+     31500       1492       3100        128       7220      19988   ELF Image Totals
+     31500       1492       3100        128          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                34600 (  33.79kB)
+    Total RW  Size (RW Data + ZI Data)              7348 (   7.18kB)
+    Total ROM Size (Code + RO Data + RW Data)      34728 (  33.91kB)
+
+==============================================================================
+

@@ -11,12 +11,14 @@
 #include "nlib\Counter\counter.h"
 #include "nlib\StringFormat\stringformat.h"
 #include "nlib\StringSerial\stringserial.h"
+#include "nlib\Blink\blink.h"
 
 // -*-*- List of node objects -*-*-
 nBlock_Ticker            nb_nBlockNode0_Ticker       (1000);
 nBlock_Counter           nb_nBlockNode1_Counter      (10);
 nBlock_StringFormat      nb_nBlockNode2_StringFormat ("%d");
 nBlock_StringSerial      nb_nBlockNode3_StringSerial (P0_31, P0_2);
+nBlock_Blink             nb_nBlockNode4_Blink        (250, P0_17);
 
 // -*-*- List of connection objects -*-*-
 nBlockConnection    n_conn0( &nb_nBlockNode2_StringFormat, 0,    &nb_nBlockNode3_StringSerial, 0);
